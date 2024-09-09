@@ -9,6 +9,6 @@ Currently, two official plugins are available:
 
 # Welcome to React
 
-## Documentation to learn React
+**_Documentation to learn React_**
 
-### Install and setup project wiht [react](./document/Installation.md)
+### Install and setup project with [react](./document/Installation.md)
