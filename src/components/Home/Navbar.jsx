@@ -5,6 +5,7 @@ export const Navbar = () => {
       <ul>
         <li>Service</li>
         <li>FQA</li>
+        <li>Love</li>
       </ul>
     </div>
   );
