@@ -1,8 +1,24 @@
 import ReactDom from "react-dom/client";
 import App from "./App";
+<<<<<<< HEAD
+=======
+import React from "react";
+import "./index.css";
 
-const rootElement = document.getElementById("root");
+ReactDom.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-const root = ReactDom.createRoot(rootElement);
+// // console.log(root);
 
-root.render(<App />);
+// import ReactDom from "react-dom/client";
+// import App from "./App";
+>>>>>>> 03c91e2 (AddComponents)
+
+// const rootElement = document.getElementById("root");
+
+// const root = ReactDom.createRoot(rootElement);
+
+// root.render(<App />);
