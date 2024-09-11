@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { View } from "./components/About/View";
 import { Layout } from "./components/layout/Layout";
 import { Main } from "./components/service/Main";
+import { FormSearch } from "./components/search/FormSearch";
 
 const router = createBrowserRouter([
   {
@@ -21,8 +22,12 @@ const router = createBrowserRouter([
         element: <View />,
       },
       {
-        path: "/Main",
+        path: "/service",
         element: <Main />,
+      },
+      {
+        path: "/search",
+        element: <FormSearch />,
       },
     ],
   },
