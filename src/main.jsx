@@ -7,7 +7,6 @@ import { View } from "./components/About/View";
 import { Layout } from "./components/layout/Layout";
 import { Main } from "./components/service/Main";
 import { FormSearch } from "./components/search/FormSearch";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,7 +25,7 @@ const router = createBrowserRouter([
         element: <Main />,
       },
       {
-        path: "/search",
+        path: "/FormSearch",
         element: <FormSearch />,
       },
     ],

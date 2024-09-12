@@ -13,7 +13,7 @@ const navigation = [
   { name: "Dashboard", href: "/View", current: true },
   { name: "User", href: "/", current: false },
   { name: "Projects", href: "/service", current: false },
-  { name: "Search", href: "/Main", current: false },
+  { name: "Search", href: "/FormSearch", current: false },
 ];
 
 function classNames(...classes) {
@@ -277,7 +277,8 @@ export const Navbar = () => {
 //           <div className="sm:hidden" id="mobile-menu">
 //             <div className="space-y-1 px-2 pb-3 pt-2">
 //               <a
-//                 href="#"
+//                 as={link}
+//                 to="#"
 //                 className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
 //                 aria-current="page"
 //               >

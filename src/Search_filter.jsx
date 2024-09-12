@@ -1,33 +1,122 @@
+// import axios from "axios";
+// import React, { useEffect, useState } from "react";
+
+// export function Search_filter() {
+//   const [data, setData] = useState([]);
+//   const [records, setRecords] = useState([]);
+
+//   useEffect(() => {
+//     axios
+//       .get("https://api.github.com/users")
+//       .then((res) => {
+//         setData(res.data);
+//         setRecords(res.data); // Set both data and records initially
+//       })
+//       .catch((err) => console.log(err));
+//   }, []);
+
+//   const filter = (event) => {
+//     const searchTerm = event.target.value.toLowerCase();
+//     const filteredRecords = data.filter((f) =>
+//       f.login.toLowerCase().includes(searchTerm)
+//     );
+//     setRecords(filteredRecords); // Update the records with filtered data
+//   };
+
+//   return (
+//     <div>
+//       <input
+//         type="text"
+//         placeholder="Search by name"
+//         onChange={filter} // Add input for filtering
+//       />
+//       <table>
+//         <thead>
+//           <tr>
+//             <th>ID</th>
+//             <th>Name</th>
+//           </tr>
+//         </thead>
+//         <tbody>
+//           {records.map((d) => (
+//             <tr key={d.id}>
+//               <td>{d.id}</td>
+//               <td>{d.login}</td>
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
+//     </div>
+//   );
+// }
+
 import axios from "axios";
-import React, { userEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export function Search_filter() {
-  const [data, setData] = useState([]);
-  userEffect(() => {
+  const [data, setData] = useState([]); // Store all users from API
+  const [records, setRecords] = useState([]); // Store filtered users for display
+  const [showDropdown, setShowDropdown] = useState(false); // Control dropdown visibility
+  const [searchTerm, setSearchTerm] = useState(""); // Store the search term
+
+  // Fetch the users data from the API on component mount
+  useEffect(() => {
     axios
-      .get("https://api.github.com/users")
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
-  });
+      .get("https://fakestoreapi.com/users")
+      .then((res) => {
+        setData(res.data); // Store all data in the state
+        setRecords(res.data.slice(0, 5)); // Initially show only 5 records
+      })
+      .catch((err) => console.log("Error fetching data:", err));
+  }, []);
+
+  // Filter records based on the search term
+  const filter = (event) => {
+    const value = event.target.value.toLowerCase(); // Get search value
+    setSearchTerm(value); // Update search term in state
+    const filteredRecords = data.filter((user) =>
+      user.login.toLowerCase().includes(value)
+    );
+    setRecords(filteredRecords.slice(0, 5)); // Display only first 5 records
+  };
+
+  // Handle search button click to show the dropdown
+  const handleSearchClick = () => {
+    if (searchTerm.trim() !== "") {
+      setShowDropdown(true); // Show dropdown if search term is not empty
+    }
+  };
+
   return (
     <div>
-      <div>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((d, i) => (
+      <label htmlFor="search"></label>
+      <input
+        type="text"
+        placeholder="Search by name"
+        onChange={filter} // Filter on input change
+        value={searchTerm} // Bind input to state
+      />
+      <button onClick={handleSearchClick}>Search</button>
+
+      {/* Only display the dropdown if showDropdown is true and we have records */}
+      {showDropdown && records.length > 0 && (
+        <table>
+          <thead>
             <tr>
-              <td>{d.id}</td>
-              <td>{d.login}</td>
+              <th>ID</th>
+              <th>Name</th>
             </tr>
-          ))}
-        </tbody>
-      </div>
+          </thead>
+          <tbody>
+            {records.map((user) => (
+              <tr key={user.id}>
+                <td>{user.id}</td>
+                <td>{user.login}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 }
