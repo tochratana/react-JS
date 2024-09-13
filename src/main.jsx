@@ -1,12 +1,13 @@
 import ReactDom from "react-dom/client";
 import App from "./App";
 import React from "react";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { View } from "./components/About/View";
+import { View } from "./components/page/About/View";
 import { Layout } from "./components/layout/Layout";
-import { Main } from "./components/service/Main";
-import { FormSearch } from "./components/search/FormSearch";
+import { Main } from "./components/page/service/Main";
+import { FormSearch } from "./components/page/search/FormSearch";
+import { CategoryAbout } from "./components/page/About/CategoryAbout";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/FormSearch",
         element: <FormSearch />,
+      },
+      {
+        path: "CategoryAbout",
+        element: <CategoryAbout />,
       },
     ],
   },

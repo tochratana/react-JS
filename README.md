@@ -12,3 +12,6 @@ Currently, two official plugins are available:
 **_Documentation to learn React_**
 
 ### Install and setup project with [react](./document/Installation.md)
+
+- Create components for develop
+- How to use [Routor Dom](./document/Routor.md)
