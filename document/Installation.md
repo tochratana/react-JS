@@ -7,8 +7,8 @@
 
 👉Go to [Vite](https://vitejs.dev/guide/) you will see this commend
 
-```
-$ npm create vite@latest
+```bash
+npm create vite@latest
 ```
 
 and copy it to terminal.Terminal that you open should be in locate in folder that you want to upload project.
@@ -18,7 +18,7 @@ and copy it to terminal.Terminal that you open should be in locate in folder tha
 After this it will be show `project'name :` and give the name of project
 Example :
 
-```
+```bash
 project'name searchAPI
 ```
 
@@ -38,7 +38,7 @@ after select `react`, you select `javascript` it mean this project react you wri
 
 after this go to or cd ot your project that you just create and then start with commend
 
-```
+```bash
 npm install
 ```
 

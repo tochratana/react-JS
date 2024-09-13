@@ -1,0 +1,50 @@
+[
+  {
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "height": "30",
+    "alt": "html5 logo",
+    "title": "HTML",
+    "category": "Use for Structure of website",
+    "descript": "This curse I will provide you about how to build a simple structure of website and you will know lots of about tag element."
+  },
+  {
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "height": "30",
+    "alt": "html5 logo",
+    "title": "CSS",
+    "category": "Use for add style to our website",
+    "descript": "This curse I will provide you about how to build a simple structure of website and you will know lots of about tag element."
+  },
+  {
+    "image": "https://skillicons.dev/icons?i=js",
+    "height": "30",
+    "alt": "javascript logo",
+    "title": "JAVASCRIPT",
+    "category": "Interative in website",
+    "descript": "This curse I will provide you about how to build a simple structure of website and you will know lots of about tag element."
+  },
+  {
+    "image": "https://skillicons.dev/icons?i=ts",
+    "height": "30",
+    "alt": "html5 logo",
+    "title": "TYPESCRIPT",
+    "category": "The same javascript but more usful",
+    "descript": "This curse I will provide you about how to build a simple structure of website and you will know lots of about tag element."
+  },
+  {
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "height": "30",
+    "alt": "html5 logo",
+    "title": "REACT JS",
+    "category": "Design fron with interative website",
+    "descript": "This curse I will provide you about how to build a simple structure of website and you will know lots of about tag element."
+  },
+  {
+    "image": "https://skillicons.dev/icons?i=tailwind",
+    "height": "30",
+    "alt": "html5 logo",
+    "title": "TAILWINDCSS",
+    "category": "Easy to put the color",
+    "descript": "This curse I will provide you about how to build a simple structure of website and you will know lots of about tag element."
+  }
+]
