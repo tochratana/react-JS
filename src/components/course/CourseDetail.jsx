@@ -19,7 +19,6 @@ export const CourseDetail = () => {
         This {course.name} I will provie you a lot of referents for you study
         and anythings
       </p>
-      <p>The first we will setup</p>
       {/* copy to clibord */}
       <div className="relative w-[325px]">
         <SyntaxHighlighter

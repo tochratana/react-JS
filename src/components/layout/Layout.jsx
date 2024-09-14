@@ -8,7 +8,7 @@ import { Footer } from "../Footer";
 export const Layout = () => {
   return (
     <div>
-      <header className="">
+      <header className=" top-0 z-30 sticky">
         <Navbar />
       </header>
       <main>
