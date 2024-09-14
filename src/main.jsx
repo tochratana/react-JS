@@ -7,6 +7,9 @@ import { Layout } from "./components/layout/Layout";
 import { Main } from "./components/page/service/Main";
 import { FormSearch } from "./components/page/search/FormSearch";
 import { CategoryAbout } from "./components/page/About/CategoryAbout";
+import { CourseDetail } from "./components/course/CourseDetail";
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import { CourseDetail } from "./components/course/CourseDetail";
 
 const router = createBrowserRouter([
   {
@@ -15,11 +18,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
+        element: <View />,
       },
       {
         path: "/View",
-        element: <View />,
+        element: <App />,
       },
       {
         path: "/service",
@@ -32,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "CategoryAbout",
         element: <CategoryAbout />,
+      },
+      {
+        path: "/course/:courseId", // Add route for course detail
+        element: <CourseDetail />,
       },
     ],
   },

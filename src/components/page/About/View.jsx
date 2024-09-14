@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import Coruse from "../../../store/course.json";
 import { Hero } from "../Home/Hero";
+import { Link } from "react-router-dom";
 
-console.log(Coruse);
 export const View = (Course) => {
+  const navigate = useNavigate();
+  const handleCardClick = (courseId) => {
+    navigate(`../../course/${courseId}`);
+  };
   return (
     <>
       <Hero />
@@ -18,9 +23,14 @@ export const View = (Course) => {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {/* This is a card component */}
             {Coruse.map((dataCourse) => {
               return (
-                <div className="overflow-hidden bg-white dark:bg-black rounded shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer">
+                <div
+                  key={dataCourse.id}
+                  onClick={() => handleCardClick(dataCourse.id)}
+                  className="overflow-hidden bg-white dark:bg-black rounded shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer"
+                >
                   <div className="p-8">
                     <div className="flex items-center">
                       <img
