@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Coruse from "../../../store/course.json";
 import { Hero } from "../Home/Hero";
 import { Link } from "react-router-dom";
+import { Protentail } from "../Home/Protentail";
 
 export const View = (Course) => {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ export const View = (Course) => {
   return (
     <>
       <Hero />
+      <Protentail />
       <section className="dark:bg-bg_primary py-10 bg-gray-50 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">

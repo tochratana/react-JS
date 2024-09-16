@@ -2,60 +2,65 @@ import React from "react";
 
 export function Hero() {
   return (
-    <>
-      <div class="bg-gradient-to-b from-green-50 to-green-100">
-        <section class="py-10 sm:py-16 lg:py-24 dark:bg-bg_primary">
-          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-              <div>
-                <h1 class="text-4xl font-bold text-black sm:text-6xl lg:text-7xl dark:text-text_primaryLight">
-                  Welcome to
-                  <div class="relative inline-flex">
-                    <span class="absolute inset-x-0 bottom-0 border-b-[30px] border-[#4ADE80]"></span>
-                    <h1 class="relative text-4xl font-bold text-black sm:text-6xl lg:text-7xl dark:text-text_primaryLight">
-                      Toch Ratana.
-                    </h1>
-                  </div>
-                </h1>
-
-                <p class="mt-8 text-base text-black sm:text-xl">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat.
-                </p>
-
-                <div class="mt-10 sm:flex sm:items-center sm:space-x-8">
-                  <a
-                    href="#"
-                    title=""
-                    class="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-orange-500 hover:bg-orange-600 focus:bg-orange-600"
-                    role="button"
-                  >
-                    {" "}
-                    Start exploring{" "}
-                  </a>
-
-                  <a
-                    href="#"
-                    title=""
-                    class="inline-flex items-center mt-6 text-base font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80"
-                  >
-                    Watch video
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <img
-                  class="w-full"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/2/hero-img.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+    <div className="dark:bg-bg_primary dark:text-white">
+      <div className="py-10 px-[200px] flex flex-col items-center">
+        <p className="text-center py-1 px-2 rounded-2xl dark:bg-black dark:text-white w-[350px] m-auto">
+          🎉 Introducing to Blog and get on linkin
+          <a
+            href="https://www.linkedin.com/in/ratana-touch-930119302/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin ml-2"></i>
+          </a>
+        </p>
+        <h1 className=" text-[70px] w-[800px] text-center font-bold">
+          Kick of with a bang with{" "}
+          <span className="bg-clip-text text-transparent bg-gradient-to-l from-[#8336ad] via-[#4a409a] to-[#142898]">
+            Toch Ratana
+          </span>
+        </h1>
+        <p className="text-xl w-[600px] text-center text-text_primary">
+          Build your next project using React.js 14, Tailwindcss, Neon, SCSS ,
+          Resend, React Email, Shadcn/ui, Stripe.
+        </p>
+        <div className="flex gap-40 mt-7">
+          <a className=" w-48 rounded-3xl py-2 px-10 border-2 border-white dark:bg-white dark:text-black flex gap-3 items-center">
+            Connect<i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a
+            href="https://github.com/RML-Cambo/react-JS"
+            className=" w-60 rounded-3xl py-2 px-8 border-2 border-white flex gap-2 items-center"
+            target="_black"
+          >
+            Star on Github 1.5K<i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </div>
-    </>
+      <div className="flex justify-center">
+        <img
+          src="./Svg/working-from-anywhere-animate.svg"
+          alt=""
+          className="w-[800px] m-auto"
+        />
+      </div>
+      <div className="">
+        <p className="text-center text-text_primary mt-7">POWERED BY</p>
+        <div className="flex items-center gap-10 text-4xl w-full justify-center mt-10 text-text_primary hover:dark:text-text_primaryLight">
+          <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold">
+            <i class="fa-brands fa-react"></i>
+            React
+          </div>
+          <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold">
+            Tailwindcss
+          </div>
+          <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold">
+            <i class="fa-brands fa-js"></i>JavaScript
+          </div>
+          <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold">
+            <i class="fa-brands fa-html5"></i>HTML
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
