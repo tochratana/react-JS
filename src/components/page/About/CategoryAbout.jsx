@@ -1,39 +1,77 @@
 import { Tabs } from "flowbite-react";
-import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
-import { MdDashboard } from "react-icons/md";
+// import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
+// import { MdDashboard } from "react-icons/md";
+import {
+  TabsHeader,
+  TabsBody,
+  Tab,
+  TabPanel,
+  Tabs,
+} from "@material-tailwind/react";
+// import { SomeComponent } from "@material-tailwind/react";
 
 export function CategoryAbout() {
-  return (
-    <div className="flex">
-      <Tabs aria-label="Tabs with icons" variant="underline">
-        <Tabs.Item active title="Profile" icon={HiUserCircle}>
-          This is{" "}
-          <span className="font-medium text-gray-800 dark:text-white">
-            Profile tab's associated content
-          </span>
-        </Tabs.Item>
+  const data = [
+    {
+      label: "HTML",
+      value: "html",
+      desc: `It really matters and then like it really doesn't matter.
+      What matters is the people who are sparked by it. And the people
+      who are like offended by it, it doesn't matter.`,
+    },
+    {
+      label: "React",
+      value: "react",
+      desc: `Because it's about motivating the doers. Because I'm here
+      to follow my dreams and inspire other people to follow their dreams, too.`,
+    },
 
-        <Tabs.Item title="Dashboard" icon={MdDashboard}>
-          This is{" "}
-          <span className="font-medium text-gray-800 dark:text-white">
-            Dashboard tab's associated content
-          </span>
-        </Tabs.Item>
-        <Tabs.Item title="Settings" icon={HiAdjustments}>
-          This is{" "}
-          <span className="font-medium text-gray-800 dark:text-white">
-            Settings tab's associated content
-          </span>
-        </Tabs.Item>
-        <Tabs.Item title="Contacts" icon={HiClipboardList}>
-          This is{" "}
-          <span className="font-medium text-gray-800 dark:text-white">
-            Contacts tab's associated content
-          </span>
-        </Tabs.Item>
-        <Tabs.Item disabled title="Disabled">
-          Disabled content
-        </Tabs.Item>
+    {
+      label: "Vue",
+      value: "vue",
+      desc: `We're not always in the position that we want to be at.
+      We're constantly growing. We're constantly making mistakes. We're
+      constantly trying to express ourselves and actualize our dreams.`,
+    },
+
+    {
+      label: "Angular",
+      value: "angular",
+      desc: `Because it's about motivating the doers. Because I'm here
+      to follow my dreams and inspire other people to follow their dreams, too.`,
+    },
+
+    {
+      label: "Svelte",
+      value: "svelte",
+      desc: `We're not always in the position that we want to be at.
+      We're constantly growing. We're constantly making mistakes. We're
+      constantly trying to express ourselves and actualize our dreams.`,
+    },
+  ];
+  return (
+    <div>
+      <Tabs id="custom-animation" value="html">
+        <TabsHeader>
+          {data.map(({ label, value }) => (
+            <Tab key={value} value={value}>
+              {label}
+            </Tab>
+          ))}
+        </TabsHeader>
+        <TabsBody
+          animate={{
+            initial: { y: 250 },
+            mount: { y: 0 },
+            unmount: { y: 250 },
+          }}
+        >
+          {data.map(({ value, desc }) => (
+            <TabPanel key={value} value={value}>
+              {desc}
+            </TabPanel>
+          ))}
+        </TabsBody>
       </Tabs>
     </div>
   );

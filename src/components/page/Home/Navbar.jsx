@@ -16,7 +16,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 
 const navigation = [
-  { name: "Dashboard", href: "/", current: true },
+  { name: "Overview", href: "/", current: true },
   { name: "User", href: "/View", current: false },
   { name: "Projects", href: "/service", current: false },
   { name: "Search", href: "/FormSearch", current: false },
