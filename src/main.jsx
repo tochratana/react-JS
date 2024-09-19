@@ -2,9 +2,9 @@ import ReactDom from "react-dom/client";
 import App from "./App";
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { View } from "./components/page/About/View";
+import { View } from "./page/Home/View";
 import { Layout } from "./components/layout/Layout";
-import { CategoryAbout } from "./components/page/About/CategoryAbout";
+import { CategoryAbout } from "./page/About/CategoryAbout";
 import { CourseDetail } from "./components/course/CourseDetail";
 
 const router = createBrowserRouter([
