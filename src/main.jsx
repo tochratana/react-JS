@@ -4,12 +4,8 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { View } from "./components/page/About/View";
 import { Layout } from "./components/layout/Layout";
-import { Main } from "./components/page/service/Main";
-import { FormSearch } from "./components/page/search/FormSearch";
 import { CategoryAbout } from "./components/page/About/CategoryAbout";
 import { CourseDetail } from "./components/course/CourseDetail";
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import { CourseDetail } from "./components/course/CourseDetail";
 
 const router = createBrowserRouter([
   {
@@ -23,14 +19,6 @@ const router = createBrowserRouter([
       {
         path: "/View",
         element: <App />,
-      },
-      {
-        path: "/service",
-        element: <Main />,
-      },
-      {
-        path: "/FormSearch",
-        element: <FormSearch />,
       },
       {
         path: "CategoryAbout",

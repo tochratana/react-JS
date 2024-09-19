@@ -19,7 +19,7 @@ export function Protentail() {
         </p>
         <div className="py-3 dark:hover:text-text_primaryLight hover:text-black">
           <p className="flex gap-5 items-center">
-            <i class="fa-solid fa-laptop text-[#8336ad]"></i>
+            <i className="fa-solid fa-laptop text-[#8336ad]"></i>
             <p className="dark:text-white text-black">Collaborative</p>
           </p>
           <p className="ml-10">
@@ -28,7 +28,7 @@ export function Protentail() {
         </div>
         <div className="dark:hover:text-text_primaryLight hover:text-black">
           <p className="flex gap-6 items-center">
-            <i class="fa-solid fa-gear text-[#8336ad]"></i>
+            <i className="fa-solid fa-gear text-[#8336ad]"></i>
             <p className="text-black dark:text-white">Innovative</p>
           </p>
           <p className="ml-10">
@@ -37,7 +37,7 @@ export function Protentail() {
         </div>
         <div className="dark:hover:text-text_primaryLight py-3 hover:text-black">
           <p className="flex gap-6 items-center">
-            <i class="fa-solid fa-magnifying-glass text-[#8336ad]"></i>
+            <i className="fa-solid fa-magnifying-glass text-[#8336ad]"></i>
             <p className="text-black dark:text-white">Scalable</p>
           </p>
           <p className="ml-10">

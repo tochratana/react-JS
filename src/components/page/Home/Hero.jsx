@@ -25,14 +25,14 @@ export function Hero() {
         </p>
         <div className="flex gap-10 md:flex-row flex-col items-center md:gap-20 lg:gap-40 mt-7">
           <a className=" w-48 rounded-3xl py-2 px-10 border-2 dark:border-white dark:bg-white dark:text-black flex gap-3 items-center border-black">
-            Connect<i class="fa-solid fa-arrow-right"></i>
+            Connect<i className="fa-solid fa-arrow-right"></i>
           </a>
           <a
             href="https://github.com/RML-Cambo/react-JS"
             className=" w-60 rounded-3xl py-2 px-8 border-2 border-white flex gap-2 items-center hover:bg-bg_primary hover:text-white duration-700"
             target="_black"
           >
-            Star on Github 1.5K<i class="fa-brands fa-github"></i>
+            Star on Github 1.5K<i className="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
@@ -47,17 +47,17 @@ export function Hero() {
         <p className="text-center text-text_primary mt-7">POWERED BY</p>
         <div className="flex items-center gap-10 lg:text-4xl w-full justify-center mt-10 text-text_primary hover:dark:text-text_primaryLight text-2xl flex-col sm:flex-row">
           <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500">
-            <i class="fa-brands fa-react"></i>
+            <i className="fa-brands fa-react"></i>
             React
           </div>
           <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500">
             Tailwindcss
           </div>
           <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500">
-            <i class="fa-brands fa-js"></i>JavaScript
+            <i className="fa-brands fa-js"></i>JavaScript
           </div>
           <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500">
-            <i class="fa-brands fa-html5"></i>HTML
+            <i className="fa-brands fa-html5"></i>HTML
           </div>
         </div>
       </div>

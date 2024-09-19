@@ -17,9 +17,6 @@ import { MdLightMode, MdDarkMode } from "react-icons/md";
 
 const navigation = [
   { name: "Overview", href: "/", current: true },
-  { name: "User", href: "/View", current: false },
-  { name: "Projects", href: "/service", current: false },
-  { name: "Search", href: "/FormSearch", current: false },
   { name: "About US", href: "/CategoryAbout", current: false },
 ];
 
