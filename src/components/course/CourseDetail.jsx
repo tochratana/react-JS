@@ -57,7 +57,6 @@ export const CourseDetail = () => {
     );
     // React coruse
   } else if (course.id === "react-course") {
-    const codeReact = 'console.log("Hello world")';
     const codeHomebrew = "brew install node";
     const codeNode = "node -v";
     const codeNodes = "npm -v";
