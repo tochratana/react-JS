@@ -64,15 +64,15 @@ const Tab = () => {
               </Link>
 
               <Link
-                to="/about/notifications"
+                to="/about/project"
                 onClick={() => setActiveTab("Notifications")}
                 className={`shrink-0 border-b-2 p-3 text-sm font-medium ${
                   activeTab === "Notifications"
-                    ? "border-b-white text-sky-600 border-gray-300"
+                    ? "hover:dark:text-text_primaryLight hover:text-bg_primary border-b-white border-2 dark:border-b-bg_primary text-text_primary border-t-text_primary border-l-text_primary border-r-text_primary rounded-t-md"
                     : "border-transparent text-gray-500"
                 }`}
               >
-                Notifications
+                Project
               </Link>
             </nav>
           </div>

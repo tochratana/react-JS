@@ -8,6 +8,7 @@ import AboutPage from "./page/about/AboutPage";
 import Tab from "./components/tab/Tab";
 import Profile from "./page/about/Profile";
 import Live from "./page/about/Live";
+import Project from "./page/about/Project";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
           {
             path: "live",
             element: <Live />,
+          },
+          {
+            path: "project",
+            element: <Project />,
           },
         ],
       },

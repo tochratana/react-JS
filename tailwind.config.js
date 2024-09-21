@@ -49,6 +49,9 @@ module.exports = withMT({
       boxShadow: {
         green_light: "0 4px 10px rgba(22, 163, 74, 0.8)",
       },
+      spacing: {
+        custom_padding: "128px",
+      },
     },
   },
   plugins: [flowbitePlugin],
