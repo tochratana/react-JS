@@ -34,7 +34,7 @@ export const CourseCard = () => {
                 <div
                   key={courses.id}
                   onClick={() => handleCardClick(courses.id)}
-                  className="overflow-hidden bg-white dark:bg-black rounded shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer"
+                  className="overflow-hidden bg-white dark:bg-black rounded shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer hover:shadow-lg"
                 >
                   <div className="p-8">
                     <div className="flex items-center">

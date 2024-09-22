@@ -9,6 +9,8 @@ import Tab from "./components/tab/Tab";
 import Profile from "./page/about/Profile";
 import Live from "./page/about/Live";
 import Project from "./page/about/Project";
+import Education from "./page/about/Education";
+import ProjectDetail from "./components/project/ProjectDetail";
 
 const router = createBrowserRouter([
   {
@@ -32,12 +34,21 @@ const router = createBrowserRouter([
             element: <Profile />,
           },
           {
+            path: "project/:projectId",
+            element: <ProjectDetail />,
+          },
+          {
             path: "live",
             element: <Live />,
           },
           {
             path: "project",
             element: <Project />,
+          },
+
+          {
+            path: "education",
+            element: <Education />,
           },
         ],
       },

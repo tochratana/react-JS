@@ -1,18 +1,53 @@
 import React from "react";
+import Advice from "./Advice";
 
 const Profile = () => {
   return (
     <>
       <div className="text-text_primary flex flex-col items-center">
-        <img
-          src="./public/image/p4.png"
-          alt=""
-          className="w-40 h-40 rounded-full"
-        />
-        <h2 className="text-white text-3xl font-bold">Toch Ratana</h2>
-        <p className="text-blue-600">Freshman at SETEC Institute</p>
-        <p>Follow me for get new information about programming</p>
-        <div>
+        <section className="flex gap-[200px] items-center p-10">
+          <div className="flex flex-col items-center justify-center w-[400px]">
+            <img
+              src="./public/image/p4.png"
+              alt=""
+              className="w-40 h-40 rounded-full"
+            />
+            <h2 className="text-white text-3xl font-bold">Toch Ratana</h2>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Light+of+Life+Church+(LLC)/@11.5493011,104.8844083,21z/data=!4m14!1m7!3m6!1s0x310951ac40a22aa7:0x68d461b8b0f7865!2sLight+of+Life+Church+(LLC)!8m2!3d11.5493375!4d104.8846212!16s%2Fg%2F11d_99lv5q!3m5!1s0x310951ac40a22aa7:0x68d461b8b0f7865!8m2!3d11.5493375!4d104.8846212!16s%2Fg%2F11d_99lv5q?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D"
+            >
+              <i class="fa-solid fa-location-dot"></i> Current living
+            </a>
+            <p>Full Stack developer </p>
+            <div className="flex items-center justify-center gap-5">
+              <a href="#">Connect Me</a>
+              <i className="fa-regular fa-message"></i>
+              <i className="fa-solid fa-calendar-days"></i>
+            </div>
+          </div>
+          <Advice />
+        </section>
+        {/* <section>
+          <h1 className="text-2xl ">Follow Me On</h1>
+          <div>
+            <div class="flex justify-evenly social-icon ">
+              <div className="w-20 h-20 flex justify-center items-center rounded-full border-2 border-white">
+                <i class="fa-brands fa-instagram bg-clip-text text-gray-200 hover:text-transparent hover:bg-custom-gradient text-6xl font-bold duration-500"></i>
+              </div>
+              <div className="w-20 h-20 flex justify-center items-center rounded-full border-2 border-white">
+                <i class="fa-brands fa-facebook duration-500 text-gray-200 text-6xl hover:text-blue-700"></i>
+              </div>
+              <div className="w-20 h-20 flex justify-center items-center rounded-full border-2 border-white ">
+                <i class="fa-brands fa-youtube text-gray-200 text-6xl hover:text-red-600 duration-500"></i>
+              </div>
+              <div className="w-20 h-20 flex justify-center items-center rounded-full border-2 border-white hover:bg-white duration-500 ">
+                <i class="fa-brands fa-tiktok text-gray-200 text-6xl hover:text-black duration-500 "></i>
+              </div>
+            </div>
+          </div>
+        </section> */}
+        {/* <div>
           <p>
             I know you've been working on various web development projects,
             primarily using JavaScript, React, and Tailwind CSS. You've also
@@ -28,7 +63,8 @@ const Profile = () => {
             about any of your projects or need recommendations on specific
             technologies, feel free to ask!
           </p>
-        </div>
+        </div> */}
+        <img src="./public/image/p4.png" alt="" />
       </div>
     </>
   );

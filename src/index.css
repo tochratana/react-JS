@@ -5,3 +5,121 @@
 :root {
   --paddong-titlecourse: 32px;
 }
+.gradient-text {
+  background-image: linear-gradient(
+    to right top,
+    #a5d74a,
+    #e1bb35,
+    #ff9b51,
+    #ff817f,
+    #ff78af,
+    #eb6fbd,
+    #cf6bca,
+    #ab6ad6,
+    #8f56ca,
+    #7242be,
+    #4f31b2,
+    #1a21a7
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-image 0.3s ease;
+}
+
+.instagram-icon:hover {
+  background-image: linear-gradient(
+    to right top,
+    #a5d74a,
+    #e1bb35,
+    #ff9b51,
+    #ff817f,
+    #ff78af,
+    #eb6fbd,
+    #cf6bca,
+    #ab6ad6,
+    #8f56ca,
+    #7242be,
+    #4f31b2,
+    #1a21a7
+  );
+}
+
+/* Project card */
+
+.port-box {
+  position: relative;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  background: #292e33;
+  border: 2px solid var(--hover-color);
+  box-shadow: var(--neon-box-shadow);
+  transition: 0.5s;
+}
+
+.port-box:hover {
+  transform: translateY(-0.8rem);
+}
+
+.prot-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prot-image img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.5s;
+  transition: 0.5s;
+}
+/* Use hover to flex--------- */
+.port-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), #440a9b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 2rem;
+}
+.port-box:hover .port-content {
+  opacity: 1;
+}
+
+.port-box:hover .prot-image img {
+  transform: scale(1.1);
+}
+
+.port-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.port-content p {
+  font-size: 0.8rem;
+  padding: 5px 0 15px 0;
+}
+
+.port-content a {
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 2px solid var(--hover-color);
+}
