@@ -11,7 +11,6 @@ import Live from "./page/about/Live";
 import Project from "./page/about/Project";
 import Education from "./page/about/Education";
 import ProjectDetail from "./components/project/ProjectDetail";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,10 +33,6 @@ const router = createBrowserRouter([
             element: <Profile />,
           },
           {
-            path: "project/:projectId",
-            element: <ProjectDetail />,
-          },
-          {
             path: "live",
             element: <Live />,
           },
@@ -45,7 +40,10 @@ const router = createBrowserRouter([
             path: "project",
             element: <Project />,
           },
-
+          {
+            path: "project/:projectId",
+            element: <ProjectDetail />,
+          },
           {
             path: "education",
             element: <Education />,

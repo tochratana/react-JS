@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 export const CourseCard = () => {
   const navigate = useNavigate();
   const handleCardClick = (id) => {
+    // console.log("Navigate ID:", id);
     navigate(`/course/${id}`);
   };
 
@@ -34,7 +35,7 @@ export const CourseCard = () => {
                 <div
                   key={courses.id}
                   onClick={() => handleCardClick(courses.id)}
-                  className="overflow-hidden bg-white dark:bg-black rounded shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer hover:shadow-lg"
+                  className="overflow-hidden bg-white dark:bg-black rounded shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer hover:shadow-lg border-2 border-gray-900 rounded-sm"
                 >
                   <div className="p-8">
                     <div className="flex items-center">

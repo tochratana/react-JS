@@ -2,12 +2,14 @@ import { useParams } from "react-router-dom";
 import Project from "../../store/project.json";
 import "../../../src/index.css";
 
-const ProjectDetail = () => {
-  const { projectId } = useParams(); // Get the projectId from the URL
-  const project = Project.find((project) => project.id === projectId);
+// console.log(useParams);
 
-  console.log(project);
-  console.log("Love");
+const ProjectDetail = () => {
+  console.log("Hello");
+  const { projectId } = useParams(); // Get the projectId from the URL
+  console.log(projectId);
+  const project = Project.find((project) => project.id === projectId);
+  console.log("Hello Sir");
   // Find the matching project
 
   if (!project) {

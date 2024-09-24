@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
+import BtnLanguage from "./BtnLanguage";
 
 const navigation = [
   { name: "Overview", href: "/", current: true },
@@ -105,16 +106,9 @@ export const Navbar = () => {
           </div>
 
           <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            {/* Button notification */}
-            <button
-              type="button"
-              className="relative rounded-full bg-white dark:bg-gray-800 p-1 text-gray-400 hover:text-black dark:hover:text-white mr-2"
-            >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="h-6 w-6" />
-            </button>
+            <BtnLanguage />
             {/* Light and Night mode */}
+
             <button
               type="button"
               className="hover:text-black relative rounded-full dark:bg-gray-800 p-1 text-gray-400 dark:hover:text-white mr-2"

@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import projectData from "../../store/project.json"; // Import JSON directly
-
 const ProjectCard = () => {
   const [cards, setCards] = useState([]); // State to store fetched data
   const navigate = useNavigate();
 
   const handleCardClick = (id) => {
+    console.log("Navigate to ID :", id);
+    console.log("Hello");
+    // console.log("object");
     navigate(`/project/${id}`);
+    // navigate(`../../../store/project${id}`);
   };
 
   useEffect(() => {
+    console.log("ProjectCard component rendered");
     // Set data from the imported JSON file
     setCards(projectData);
   }, []); // Empty dependency array to run once
@@ -30,7 +34,7 @@ const ProjectCard = () => {
             <h3>{dataProject.title}</h3>
             <p>{dataProject.detail}</p>
             <a href="#">
-              <i className="fa-solid fa-up-right-from-square"></i>
+              <i className="fa-solid fa-up-right-from-square text-black"></i>
             </a>
           </div>
         </div>

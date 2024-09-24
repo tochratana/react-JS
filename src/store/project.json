@@ -1,23 +1,26 @@
 [
   {
-    "id": "game_demo",
-    "title": "GameDev",
-    "detail": "Free software and can play with your team on website "
+    "id": "busweb_demo",
+    "title": "BusinessWeb",
+    "detail": "Help you to find your client and easy business",
+    "image": "../../public/image/p_business.png"
   },
   {
-    "id": "elearning_demo",
-    "title": "E-learning",
-    "detail": "Provide you about service of course E-learning "
+    "id": "teamWork_demo",
+    "title": "TeamWork",
+    "detail": "Find work team and tranning with your career",
+    "image": "../../public/image/p_teamWork.png"
   },
   {
     "id": "portfolio_demo",
     "title": "Portfolio Demo",
-    "detail": "This is a demo project",
-    "image": "/path/to/image.jpg"
+    "detail": "Simple Portfolio for first leaning",
+    "image": "../../public/image/p_por.png"
   },
   {
-    "id": "elearning_demo",
-    "title": "E-learning",
-    "detail": "Provide you about service of course E-learning "
+    "id": "service_domo",
+    "title": "Service",
+    "detail": "Provide you about service with you daily",
+    "image": "../../public/image/p_service.png"
   }
 ]
