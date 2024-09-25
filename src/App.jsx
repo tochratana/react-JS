@@ -11,6 +11,7 @@ import Live from "./page/about/Live";
 import Project from "./page/about/Project";
 import Education from "./page/about/Education";
 import ProjectDetail from "./components/project/ProjectDetail";
+import Connect from "./components/auth/Connect";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/connect",
+        element: <Connect />,
       },
       {
         path: "course/:courseId",

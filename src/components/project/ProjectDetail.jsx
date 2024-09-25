@@ -5,24 +5,15 @@ import "../../../src/index.css";
 // console.log(useParams);
 
 const ProjectDetail = () => {
-  console.log("Hello");
   const { projectId } = useParams(); // Get the projectId from the URL
-  console.log(projectId);
   const project = Project.find((project) => project.id === projectId);
-  console.log("Hello Sir");
   // Find the matching project
-
-  if (!project) {
-    return <div>Project not found</div>;
+  if (project.id === "busweb_demo") {
+    return (
+      <div className="text-text_primary">
+        <h1>This is a Business website</h1>
+      </div>
+    );
   }
-
-  return (
-    <div className="project-detail">
-      <h2>{project.title}</h2>
-      <img src={project.image} alt={project.title} />
-      <p>{project.detail}</p>
-    </div>
-  );
 };
-
 export default ProjectDetail;

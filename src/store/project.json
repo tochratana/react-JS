@@ -20,7 +20,7 @@
   {
     "id": "service_domo",
     "title": "Service",
-    "detail": "Provide you about service with you daily",
+    "detail": "Provide you about service with your daily",
     "image": "../../public/image/p_service.png"
   }
 ]

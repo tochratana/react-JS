@@ -20,11 +20,12 @@ export const CourseCard = () => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl dark:text-text_primaryLight">
-              The course provide you
+              Documentation
             </h2>
             <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis.
+              We have a lot of course or documentation for you search or learn
+              this is a little bit of my learning and I want to share it with
+              you.
             </p>
           </div>
 
@@ -35,7 +36,7 @@ export const CourseCard = () => {
                 <div
                   key={courses.id}
                   onClick={() => handleCardClick(courses.id)}
-                  className="overflow-hidden bg-white dark:bg-black rounded shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer hover:shadow-lg border-2 border-gray-900 rounded-sm"
+                  className="overflow-hidden bg-white dark:bg-black shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer hover:shadow-lg border-2 border-gray-900 rounded-md"
                 >
                   <div className="p-8">
                     <div className="flex items-center">

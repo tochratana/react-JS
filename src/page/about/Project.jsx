@@ -33,7 +33,9 @@ const Project = () => {
           </div>
           <img src={demoAnimate} alt="" className="w-[500px] h-[500px]" />
         </section>
-        <section>
+        <section className="flex flex-col items-center">
+          <h1 className="text-3xl font-bold mb-5">Some of My project</h1>
+          <p>You can demo it</p>
           <ProjectCard />
         </section>
       </div>

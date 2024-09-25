@@ -9,7 +9,7 @@ const ProjectCard = () => {
     console.log("Navigate to ID :", id);
     console.log("Hello");
     // console.log("object");
-    navigate(`/project/${id}`);
+    navigate(`/about/project/${id}`);
     // navigate(`../../../store/project${id}`);
   };
 

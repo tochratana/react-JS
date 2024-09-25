@@ -124,3 +124,27 @@
   width: 50px;
   border: 2px solid var(--hover-color);
 }
+
+/* text animation */
+@layer utilities {
+  .linear-wipe {
+    @apply text-center bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      to right,
+      #8336ad,
+      #4a1c65,
+      #4a409a,
+      #6353dc,
+      #142898,
+      #8336ad
+    );
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}

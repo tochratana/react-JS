@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -15,18 +16,20 @@ export default function Hero() {
         </p>
         <h1 className="text-4xl lg:text-[70px] w-[380px] md:w-[800px] lg:w-[800px] text-center font-bold md:leading-[90px]">
           Kick of with a bang with{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-l from-[#8336ad] via-[#4a409a] to-[#142898]">
-            Toch Ratana
-          </span>
+          <span className="linear-wipe">Toch Ratana</span>
         </h1>
+
         <p className="text-xl w-[400px] lg:w-[600px] text-center text-text_primary">
           Build your next project using React.js 14, Tailwindcss, Neon, SCSS ,
           Resend, React Email, Shadcn/ui, Stripe.
         </p>
         <div className="flex gap-10 md:flex-row flex-col items-center md:gap-20 lg:gap-40 mt-7">
-          <a className=" w-48 rounded-3xl py-2 px-10 border-2 dark:border-white dark:bg-white dark:text-black flex gap-3 items-center border-black">
+          <Link
+            className=" w-48 rounded-3xl py-2 px-10 border-2 dark:border-white dark:bg-white dark:text-black flex gap-3 items-center border-black"
+            to="/connect"
+          >
             Connect<i className="fa-solid fa-arrow-right"></i>
-          </a>
+          </Link>
           <a
             href="https://github.com/RML-Cambo/react-JS"
             className=" w-60 rounded-3xl py-2 px-8 border-2 border-white flex gap-2 items-center hover:bg-bg_primary hover:text-white duration-700"
