@@ -4,7 +4,7 @@ import demoAnimate from "../../../public/Svg/demo.svg";
 import businessweb from "../../../public/image/p_business.png";
 import por from "../../../public/image/p_por.png";
 import service from "../../../public/image/p_service.png";
-import teamwork from "../../../public/image/p_teamwork.png";
+import teamwork from "../../../public/image/p_teamWork.png";
 
 const Project = () => {
   return (
