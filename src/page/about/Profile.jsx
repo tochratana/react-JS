@@ -1,7 +1,8 @@
 import React from "react";
 import Advice from "./Advice";
 import { Link } from "react-router-dom";
-// import ai_anima from "../../../public/Svg/ai_anima/svg";
+import profile from "../../../public/image/p4.png";
+import ai_anima from "../../../public/Svg/ai_anima.svg";
 
 const Profile = () => {
   return (
@@ -9,11 +10,7 @@ const Profile = () => {
       <div className="text-text_primary flex flex-col items-center">
         <section className="flex gap-[200px] items-center p-10">
           <div className="flex flex-col items-center justify-center w-[400px]">
-            <img
-              src="./public/image/p4.png"
-              alt=""
-              className="w-40 h-40 rounded-full"
-            />
+            <img src={profile} alt="" className="w-40 h-40 rounded-full" />
             <h2 className="text-white text-3xl font-bold">Toch Ratana</h2>
             <a
               target="_blank"
@@ -52,7 +49,7 @@ const Profile = () => {
           </div>
           <div>
             <img
-              src="./public/Svg/ai_anima.svg"
+              src={ai_anima}
               alt="AI Animation"
               className="w-[400px] h-[400px]"
             />
