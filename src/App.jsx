@@ -12,6 +12,7 @@ import Project from "./page/about/Project";
 import Education from "./page/about/Education";
 import ProjectDetail from "./components/project/ProjectDetail";
 import Connect from "./components/auth/Connect";
+import Edu_cstad from "./components/edu/Edu_cstad";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
             element: <Education />,
           },
         ],
+      },
+      {
+        path: "edu",
+        element: <Edu_cstad />,
       },
     ],
   },

@@ -125,6 +125,10 @@
   border: 2px solid var(--hover-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* text animation */
 @layer utilities {
   .linear-wipe {

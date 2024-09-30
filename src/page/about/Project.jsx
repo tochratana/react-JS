@@ -21,7 +21,7 @@ const Project = () => {
             <div className="flex justify-center mt-10">
               <a
                 class="group relative inline-block overflow-hidden border border-text_primary px-8 py-3 focus:outline-none"
-                href="#"
+                href="#demo"
               >
                 <span class="absolute inset-y-0 left-0 w-[2px] dark:bg-white bg-black transition-all group-hover:w-full group-active:bg-indigo-500 duration-700"></span>
 
@@ -35,7 +35,7 @@ const Project = () => {
         </section>
         <section className="flex flex-col items-center">
           <h1 className="text-3xl font-bold mb-5">Some of My project</h1>
-          <p>You can demo it</p>
+          <p id="demo">You can demo it</p>
           <ProjectCard />
         </section>
       </div>

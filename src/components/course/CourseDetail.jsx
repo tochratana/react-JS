@@ -110,6 +110,9 @@ export const CourseDetail = () => {
             />
           </div>
           <p>The (....) is a name of you folder </p>
+          <h1 className="text-xl text-white mt-5">1. Number</h1>
+          <h1 className="text-xl text-white mt-5">2. String</h1>
+          <h1 className="text-xl text-white mt-5">3. Booleans</h1>
         </div>
       </>
     );

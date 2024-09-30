@@ -19,7 +19,7 @@ const Tab = () => {
             onChange={(e) => setActiveTab(e.target.value)}
           >
             <option>Profile</option>
-            <option>Live</option>
+            {/* <option>Live</option> */}
             <option>Archive</option>
             <option>Notifications</option>
           </select>
@@ -39,7 +39,7 @@ const Tab = () => {
                 Profile
               </Link>
 
-              <Link
+              {/* <Link
                 to="/about/live"
                 onClick={() => setActiveTab("Live")}
                 className={`shrink-0 border-b-2 p-3 text-sm font-medium ${
@@ -49,7 +49,7 @@ const Tab = () => {
                 }`}
               >
                 Life
-              </Link>
+              </Link> */}
 
               <Link
                 to="/about/education"

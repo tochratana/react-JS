@@ -5,6 +5,13 @@ const Connect = () => {
     <div>
       <section className="text-text_primary">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <h2 className="text-4xl text-white font-bold text-center">
+            Connect me
+          </h2>
+          <p>
+            If you want to know about something you can connect on the form or
+            you a phone number DM to me and always happy to with you message
+          </p>
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">
               <p className="max-w-xl text-lg">

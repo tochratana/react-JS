@@ -1,5 +1,7 @@
 import React from "react";
 import Advice from "./Advice";
+import { Link } from "react-router-dom";
+// import ai_anima from "../../../public/Svg/ai_anima/svg";
 
 const Profile = () => {
   return (
@@ -21,12 +23,40 @@ const Profile = () => {
             </a>
             <p>Full Stack developer </p>
             <div className="flex items-center justify-center gap-5">
-              <a href="#">Connect Me</a>
+              <Link to="/connect">Connect Me</Link>
               <i className="fa-regular fa-message"></i>
               <i className="fa-solid fa-calendar-days"></i>
             </div>
           </div>
           <Advice />
+        </section>
+        <section className="flex items-center gap-60">
+          <div className="w-[600px]">
+            <h2 className="text-2xl text-white font-bold">
+              Artificial Intelligence
+            </h2>
+            <p>
+              AI refers to the simulation of human intelligence in machines that
+              are designed to think and learn like humans.
+            </p>
+            <p className="leading-7">
+              Narrow AI (Weak AI): AI that is specialized in a specific task.
+              For example, voice assistants (like Siri), recommendation systems
+              (like Netflix suggestions), and facial recognition systems.
+              General AI (Strong AI): AI that can perform any intellectual task
+              that a human can do. This type of AI doesn't exist yet but is the
+              goal of many research projects. Superintelligent AI: A theoretical
+              concept of AI surpassing human intelligence in all aspects,
+              including creativity, decision-making, and emotional intelligence.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./public/Svg/ai_anima.svg"
+              alt="AI Animation"
+              className="w-[400px] h-[400px]"
+            />
+          </div>
         </section>
         {/* <section>
           <h1 className="text-2xl ">Follow Me On</h1>
@@ -64,7 +94,6 @@ const Profile = () => {
             technologies, feel free to ask!
           </p>
         </div> */}
-        <img src="./public/image/p4.png" alt="" />
       </div>
     </>
   );

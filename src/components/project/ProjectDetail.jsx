@@ -11,7 +11,7 @@ const ProjectDetail = () => {
   if (project.id === "busweb_demo") {
     return (
       <div className="text-text_primary">
-        <h1>This is a Business website</h1>
+        {/* <h1>This is a Business website</h1> */}
       </div>
     );
   }
