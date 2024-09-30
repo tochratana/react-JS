@@ -7,7 +7,7 @@ const BtnLanguage = () => {
         id="dropdownHoverButton"
         data-dropdown-toggle="dropdownHover"
         data-dropdown-trigger="hover"
-        class="dark:text-white focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center w-28 dark:bg-gray-800 mr-2 text-black border-2 border-gray-200"
+        class="dark:text-white focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center w-28 dark:bg-gray-800 mr-2 text-black border-2 border-gray-200 dark:border-black"
         type="button"
       >
         Language
