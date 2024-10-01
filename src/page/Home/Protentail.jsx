@@ -9,9 +9,9 @@ export function Protentail() {
         className="w-[200px] md:w-[500px]"
       />
       <div className="p-10 w-[400px] md:w-[700px] ">
-        <h1 className="text-black dark:text-white md:text-xl xl:text-4xl font-bold">
+        <h2 className="text-black dark:text-white md:text-xl xl:text-4xl font-bold">
           Empower your projects
-        </h1>
+        </h2>
         <p className="dark:hover:text-text_primaryLight py-2 hover:text-black text-sm xl:text-xl">
           Unlock the full potential of your projects with our open-source SaaS
           platform. Collaborate seamlessly, innovate effortlessly, and scale

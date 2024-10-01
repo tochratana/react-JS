@@ -1,83 +1,52 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Profile from "../../page/about/Profile";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Tab = () => {
-  const [activeTab, setActiveTab] = useState("Profile");
+  const location = useLocation();
+
+  // Helper function to determine if a tab is active
+  const isActive = (path) => location.pathname === path;
+
   return (
     <>
-      <div>
-        <div className="sm:hidden">
-          <label htmlFor="Tab" className="sr-only">
-            Tab
-          </label>
-          <select
-            id="Tab"
-            className="w-full rounded-md border-gray-200"
-            value={activeTab}
-            onChange={(e) => setActiveTab(e.target.value)}
+      <ul className="flex flex-wrap text-sm font-medium text-center justify-center text-[10px] text-text_primary">
+        <li className="me-2">
+          <Link
+            to="/about"
+            className={`inline-block p-4 border-b-2 rounded-t-lg ${
+              isActive("/about")
+                ? "dark:text-white text-black border-black dark:border-white"
+                : "hover:text-black hover:border-black border-transparent hover:dark:text-white dark:hover:border-white"
+            } duration-300`}
           >
-            <option>Profile</option>
-            {/* <option>Live</option> */}
-            <option>Archive</option>
-            <option>Notifications</option>
-          </select>
-        </div>
-        <div className="hidden sm:block">
-          <div className="border-b border-gray-200 mt-5">
-            <nav className="-mb-px flex gap-6 justify-center">
-              <Link
-                to="/about"
-                onClick={() => setActiveTab("Profile")}
-                className={`shrink-0 border-b-2 p-3 text-sm font-medium ${
-                  activeTab === "Profile"
-                    ? "hover:dark:text-text_primaryLight hover:text-bg_primary border-b-white border-2 dark:border-b-bg_primary text-text_primary border-t-text_primary border-l-text_primary border-r-text_primary rounded-t-md"
-                    : "border-transparent text-gray-500"
-                }`}
-              >
-                Profile
-              </Link>
-
-              {/* <Link
-                to="/about/live"
-                onClick={() => setActiveTab("Live")}
-                className={`shrink-0 border-b-2 p-3 text-sm font-medium ${
-                  activeTab === "Live"
-                    ? "hover:dark:text-text_primaryLight hover:text-bg_primary border-b-white border-2 dark:border-b-bg_primary text-text_primary border-t-text_primary border-l-text_primary border-r-text_primary rounded-t-md"
-                    : "border-transparent text-gray-500"
-                }`}
-              >
-                Life
-              </Link> */}
-
-              <Link
-                to="/about/education"
-                onClick={() => setActiveTab("Education")}
-                className={`shrink-0 border-b-2 p-3 text-sm font-medium ${
-                  activeTab === "Education"
-                    ? "hover:dark:text-text_primaryLight hover:text-bg_primary border-b-white border-2 dark:border-b-bg_primary text-text_primary border-t-text_primary border-l-text_primary border-r-text_primary rounded-t-md"
-                    : "border-transparent text-gray-500"
-                }`}
-              >
-                Education
-              </Link>
-
-              <Link
-                to="/about/project"
-                onClick={() => setActiveTab("Notifications")}
-                className={`shrink-0 border-b-2 p-3 text-sm font-medium ${
-                  activeTab === "Notifications"
-                    ? "hover:dark:text-text_primaryLight hover:text-bg_primary border-b-white border-2 dark:border-b-bg_primary text-text_primary border-t-text_primary border-l-text_primary border-r-text_primary rounded-t-md"
-                    : "border-transparent text-gray-500"
-                }`}
-              >
-                Project
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </div>
+            Profile
+          </Link>
+        </li>
+        <li className="me-2" role="presentation">
+          <Link
+            to="/about/education"
+            className={`inline-block p-4 border-b-2 rounded-t-lg ${
+              isActive("/about/education")
+                ? "dark:text-white text-black border-black dark:border-white"
+                : "hover:text-black hover:border-black border-transparent hover:dark:text-white dark:hover:border-white"
+            } duration-300`}
+          >
+            Education
+          </Link>
+        </li>
+        <li className="me-2" role="presentation">
+          <Link
+            to="/about/project"
+            className={`inline-block p-4 border-b-2 rounded-t-lg ${
+              isActive("/about/project")
+                ? "dark:text-white text-black border-black dark:border-white"
+                : "hover:text-black hover:border-black border-transparent hover:dark:text-white dark:hover:border-white"
+            } duration-300`}
+          >
+            Project
+          </Link>
+        </li>
+      </ul>
     </>
   );
 };
