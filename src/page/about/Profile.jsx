@@ -1,15 +1,15 @@
 import React from "react";
 import Advice from "./Advice";
 import { Link } from "react-router-dom";
-import profile from "../../../public/image/p4.png";
+import profile from "../../../public/image/ProfileB.png";
 import ai_anima from "../../../public/Svg/ai_anima.svg";
 
 const Profile = () => {
   return (
     <>
       <div className="text-text_primary flex flex-col items-center">
-        <section className="flex gap-[200px] items-center p-10">
-          <div className="flex flex-col items-center justify-center w-[400px]">
+        <section className="md:gap-[200px] items-center md:p-10 flex md:flex-row flex-col gap-10">
+          <div className="flex flex-col items-center justify-center w-[200px] sm:w-[400px]">
             <img src={profile} alt="" className="w-40 h-40 rounded-full" />
             <h2 className="text-white text-3xl font-bold">Toch Ratana</h2>
             <a
@@ -27,8 +27,8 @@ const Profile = () => {
           </div>
           <Advice />
         </section>
-        <section className="flex items-center gap-60">
-          <div className="w-[600px]">
+        <section className="gap-10 flex items-center md:gap-60 md:p-10 md:flex-row flex-col mt-10 md:mt-0">
+          <div className="w-[300px] md:w-[600px]">
             <h2 className="text-2xl text-white font-bold">
               Artificial Intelligence
             </h2>
@@ -56,7 +56,7 @@ const Profile = () => {
           </div>
         </section>
         {/* <section>
-          <h1 className="text-2xl ">Follow Me On</h1>
+          <h2 className="text-2xl ">Follow Me On</h2>
           <div>
             <div class="flex justify-evenly social-icon ">
               <div className="w-20 h-20 flex justify-center items-center rounded-full border-2 border-white">

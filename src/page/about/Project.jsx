@@ -10,12 +10,12 @@ const Project = () => {
   return (
     <>
       <div className="text-text_primary">
-        <section className="flex gap-20 px-20 mx-10">
-          <div className="w-[800px]">
-            <h1 className="text-5xl bg-clip-text text-transparent bg-gradient-to-l from-[#8336ad] via-[#4a409a] to-[#142898] font-bold pt-20 pl-20">
+        <section className="items-center flex md:flex-row flex-col md:gap-20 px-10 lg:px-20 mx-0 lg:mx-10 gap-5">
+          <div className="sm:w-[500px] lg:w-[800px]">
+            <h2 className="text-5xl bg-clip-text text-transparent bg-gradient-to-l from-[#8336ad] via-[#4a409a] to-[#142898] font-bold pt-20 md:pl-20">
               Project Practicum
-            </h1>
-            <p className="px-14 mt-10 ml-10">
+            </h2>
+            <p className="px-7 xl:px-14 mt-10 ml-10">
               This project I have do it alone after I graduate about HTML CSS
               JavaScript and React JS.If you want to get this project, you can
               DM to me. About some of project I clone from another website. You
@@ -35,10 +35,14 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <img src={demoAnimate} alt="" className="w-[500px] h-[500px]" />
+          <img
+            src={demoAnimate}
+            alt=""
+            className="xl:w-[500px] xl:h-[500px] sm:w-[300px] sm:h-[300px] w-[200px] h-[200px]"
+          />
         </section>
         <section className="flex flex-col items-center">
-          <h1 className="text-3xl font-bold mb-5">Some of My project</h1>
+          <h2 className="text-3xl font-bold mb-5">Some of My project</h2>
           <p id="demo">You can demo it</p>
           {/* <ProjectCard /> */}
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-20">

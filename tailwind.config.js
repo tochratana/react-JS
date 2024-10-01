@@ -58,6 +58,9 @@ module.exports = withMT({
         "custom-gradient":
           "linear-gradient(to right top, #a5d74a, #e1bb35, #ff9b51, #ff817f, #ff78af, #eb6fbd, #cf6bca, #ab6ad6, #8f56ca, #7242be, #4f31b2, #1a21a7)",
       },
+      maxWidth: {
+        custom_ssm: "300px",
+      },
     },
   },
   plugins: [flowbitePlugin],

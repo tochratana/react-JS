@@ -20,9 +20,9 @@ const Advice = () => {
   return (
     <div
       onClick={fetchAdvice}
-      className="hover:cursor-pointer bg-black px-[150px] py-[30px] dark:shadow-[0_4px_10px_rgba(22,163,74,0.8)] dark:hover:shadow-none"
+      className="hover:cursor-pointer bg-black sm:px-0 py-[30px] dark:shadow-[0_4px_10px_rgba(22,163,74,0.8)] dark:hover:shadow-none xl:px-[100px]"
     >
-      <p className="text-2xl text-center w-[400px] text-white ">
+      <p className="md:text-2xl text-center w-[200px] sm:w-[400px] text-white text-sm">
         " {advice ? advice : "Loading advice..."} "
       </p>
     </div>
