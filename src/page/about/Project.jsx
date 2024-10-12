@@ -5,6 +5,7 @@ import businessweb from "../../../public/image/p_business.png";
 import por from "../../../public/image/p_por.png";
 import service from "../../../public/image/p_service.png";
 import teamwork from "../../../public/image/p_teamWork.png";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
@@ -53,9 +54,9 @@ const Project = () => {
               <div className="port-content">
                 <h3>BusinessWeb</h3>
                 <p>Help you to find your client and easy business</p>
-                <a href="#">
+                <Link to="/demobusiness">
                   <i className="fa-solid fa-up-right-from-square text-black"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="port-box">
@@ -63,11 +64,11 @@ const Project = () => {
                 <img src={por} />
               </div>
               <div className="port-content">
-                <h3>TeamWork</h3>
-                <p>Find work team and tranning with your career</p>
-                <a href="#">
+                <h3>Portfolio Demo</h3>
+                <p>Simple Portfolio for first leaning</p>
+                <Link to="/demoportfolio">
                   <i className="fa-solid fa-up-right-from-square text-black"></i>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="port-box">
@@ -75,8 +76,8 @@ const Project = () => {
                 <img src={service} />
               </div>
               <div className="port-content">
-                <h3>Portfolio Demo</h3>
-                <p>Simple Portfolio for first leaning</p>
+                <h3>TeamWork</h3>
+                <p>Provide you about service with your daily</p>
                 <a href="#">
                   <i className="fa-solid fa-up-right-from-square text-black"></i>
                 </a>
@@ -88,7 +89,7 @@ const Project = () => {
               </div>
               <div className="port-content">
                 <h3>Service</h3>
-                <p>Provide you about service with your daily</p>
+                <p>Find work team and tranning with your career</p>
                 <a href="#">
                   <i className="fa-solid fa-up-right-from-square text-black"></i>
                 </a>

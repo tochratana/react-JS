@@ -31,7 +31,7 @@ export default function Hero() {
             Connect<i className="fa-solid fa-arrow-right"></i>
           </Link>
           <a
-            href="https://github.com/RML-Cambo/react-JS"
+            href="https://github.com/tochratana/react-JS"
             className=" w-60 rounded-3xl py-2 px-8 border-2 border-white flex gap-2 items-center hover:bg-bg_primary hover:text-white duration-700"
             target="_black"
           >
@@ -49,17 +49,29 @@ export default function Hero() {
       <div className="">
         <p className="text-center text-text_primary mt-7">POWERED BY</p>
         <div className="flex items-center gap-10 lg:text-4xl w-full justify-center mt-10 text-text_primary hover:dark:text-text_primaryLight text-2xl flex-col sm:flex-row">
-          <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500">
+          <div
+            className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500"
+            data-aos="zoom-in-right"
+          >
             <i className="fa-brands fa-react"></i>
             React
           </div>
-          <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500">
+          <div
+            className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500"
+            data-aos="zoom-in-right"
+          >
             Tailwindcss
           </div>
-          <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500">
+          <div
+            className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500"
+            data-aos="zoom-in-left"
+          >
             <i className="fa-brands fa-js"></i>JavaScript
           </div>
-          <div className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500">
+          <div
+            className="text-text_primary hover:dark:text-white cursor-pointer flex gap-3 font-bold hover:text-bg_primary duration-500"
+            data-aos="zoom-in-left"
+          >
             <i className="fa-brands fa-html5"></i>HTML
           </div>
         </div>
