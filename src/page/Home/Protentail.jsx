@@ -2,7 +2,10 @@ import React from "react";
 
 export function Protentail() {
   return (
-    <div className="dark:bg-bg_primary text-text_primary  flex xl:px-[10%] px-[4%] py-16 bg-gray-50 xl:flex-row flex-col items-center justify-center">
+    <div
+      className="dark:bg-bg_primary text-text_primary  flex xl:px-[10%] px-[4%] py-16 bg-gray-50 xl:flex-row flex-col items-center justify-center"
+      data-aos="zoom-in-down"
+    >
       <img
         src="./Svg/Data extraction-cuate.svg"
         alt=""

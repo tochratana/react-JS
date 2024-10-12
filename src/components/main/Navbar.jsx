@@ -123,7 +123,7 @@ export const Navbar = () => {
               )}
             </button>
             <a
-              href="https://github.com/RML-Cambo"
+              href="https://github.com/tochratana"
               target="_blank"
               className="hover:text-black relative rounded-full dark:bg-gray-800 p-1 text-gray-400 dark:hover:text-white w-[32px] text-center"
             >

@@ -34,6 +34,7 @@ export const CourseCard = () => {
             {Coruse.map((courses) => {
               return (
                 <div
+                  data-aos="zoom-in-up"
                   key={courses.id}
                   onClick={() => handleCardClick(courses.id)}
                   className="overflow-hidden bg-white dark:bg-black shadow dark:hover:shadow-[0_4px_10px_rgba(22,163,74,0.8)]  cursor-pointer hover:shadow-lg border-2 border-gray-900 rounded-md"
