@@ -15,6 +15,7 @@ import Connect from "./components/auth/Connect";
 import Edu_cstad from "./components/edu/Edu_cstad";
 import D_business from "./components/project/D_business";
 import D_portfolio from "./components/project/D_portfolio";
+import Js_exercise from "./components/exercise/Js_exercise";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
       {
         path: "/edu_cstad",
         element: <Edu_cstad />,
+      },
+      {
+        path: "/exercise/javascript",
+        element: <Js_exercise />,
       },
     ],
   },
