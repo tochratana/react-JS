@@ -76,7 +76,7 @@ const Js_exercise = () => {
           <hr />
           <a
             className="mt-5 flex items-center gap-5 w-[80%] h-14 m-auto rounded-lg justify-center bg-gradient-to-l from-[#8336ad] via-[#4a409a] to-[#142898]"
-            href="../../../document/project-practice/javascript-amazone-project.zip"
+            href="../../../document/project-practice/javascript-amazon-project.zip"
             download="javascript-amazone-project.zip"
           >
             <p>Download</p>
