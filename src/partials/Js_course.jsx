@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Clipboard } from "flowbite-react";
+import CodeDisplay from "../components/code/CodeDisplay";
 
 const Js_course = () => {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
@@ -38,11 +39,14 @@ const Js_course = () => {
       >
         <span class="material-symbols-outlined">thumbnail_bar</span>
       </button>
+
       <div ref={sidebarRef}>
         <JavaScript_sidebar isVisible={isSidebarVisible} />
       </div>
+
       {/* <JavaScript_sidebar isVisible={isSidebarVisible} /> */}
       <a name="arrow" />
+      <CodeDisplay />
       <div>
         <Link
           to="/"
@@ -152,12 +156,13 @@ const Js_course = () => {
           <h1 className="text-xl text-white mt-5">2. String</h1>
           <h1 className="text-xl text-white mt-5">3. Booleans</h1>
         </div>
+
         <div className="hidden md:block border-l-2 px-4 border-black dark:border-text_primary fixed right-28">
           <ul>
             <li>
               <a
                 href="#introduction"
-                className="text-blue-600 underline-offset-2 underline"
+                className="text-blue-600 hover:underline-offset-2 hover:underline dark:text-white"
               >
                 Introduction
               </a>
@@ -165,7 +170,7 @@ const Js_course = () => {
             <li>
               <a
                 href="#installation"
-                className="text-blue-600 underline-offset-2 underline"
+                className="text-blue-600 hover:underline-offset-2 hover:underline dark:text-white"
               >
                 Installation
               </a>
@@ -173,9 +178,17 @@ const Js_course = () => {
             <li>
               <Link
                 to="/exercise/javascript"
-                className="text-blue-600 underline-offset-2 underline"
+                className="text-blue-600 hover:underline-offset-2 hover:underline dark:text-white"
               >
                 Exercise Practice
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/exercise/javascript"
+                className="text-blue-600 hover:underline-offset-2 hover:underline dark:text-white"
+              >
+                Documentation
               </Link>
             </li>
           </ul>
