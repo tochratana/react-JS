@@ -15,20 +15,20 @@ const React_course = () => {
     <div>
       <a name="introduction" />
       <a name="arrow" />
-      <div>
+      <div className="flex items-center gap-5 px-10 text-text_primary text-sm mt-5">
         <Link
           to="/"
-          className="flex items-center gap-2 rounded-md py-10 px-5 w-[150px] dark:text-text_primary"
+          className="text-blue-600 hover:underline hover:underline-offset-2"
         >
-          <div className="w-5 h-5 border-2 border-bg_primaryOld bg-text_primary rounded-full flex justify-center items-center text-black">
-            <i className="fa-solid fa-chevron-left"></i>
-          </div>
-          <p>Back</p>
+          Home
         </Link>
+        <i class="fa-solid fa-greater-than"></i>
+        <p className="">Amazone Project</p>
       </div>
-      {/* container */}
-
-      <div className="flex sm:px-[120px]">
+      <h1 className="ml-[5%] text-2xl my-10 text-black font-bold dark:text-white">
+        REACT COURSE
+      </h1>
+      {/* <div className="flex sm:px-[120px]">
         <div className="text-text_primary relative md:w-[300px] lg:w-[600px] xl:w-[700px] 2xl:w-[1000px]">
           <a
             href="#arrow"
@@ -37,9 +37,6 @@ const React_course = () => {
             <i class="fa-solid fa-arrow-up"></i>
           </a>
 
-          <h1 className="dark:text-text_primaryLight text-2xl font-bold mb-5">
-            REACT COURSE
-          </h1>
           <p className="pl-10">
             This course I will provie you a lot of reference and documentation
             for your study.
@@ -80,7 +77,7 @@ const React_course = () => {
           <h2 className="text-text_primary pt-10">
             We have two way to setup project with React JS
           </h2>
-          {/* Using React */}
+
           <div className="pl-10 py-10 leading-10">
             <p className="">Before we install react we need to install Node</p>
             <p>The node js have different operating system to install</p>
@@ -141,7 +138,7 @@ const React_course = () => {
 
                   <Clipboard.WithIcon
                     valueToCopy={codeHomebrew}
-                    className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]" // Adjust position as needed
+                    className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]"
                   />
                 </div>
                 <ol>
@@ -165,7 +162,7 @@ const React_course = () => {
 
                   <Clipboard.WithIcon
                     valueToCopy={codeNode}
-                    className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]" // Adjust position as needed
+                    className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]"
                   />
                 </div>
               </li>
@@ -185,7 +182,7 @@ const React_course = () => {
 
                 <Clipboard.WithIcon
                   valueToCopy={codeNodes}
-                  className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]" // Adjust position as needed
+                  className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]"
                 />
               </div>
             </ol>
@@ -216,7 +213,7 @@ const React_course = () => {
 
               <Clipboard.WithIcon
                 valueToCopy={codeReactApp}
-                className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]" // Adjust position as needed
+                className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]"
               />
             </div>
             <p>Replace my-app with your desired project name.</p>
@@ -235,7 +232,7 @@ const React_course = () => {
 
               <Clipboard.WithIcon
                 valueToCopy={codeCd}
-                className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]" // Adjust position as needed
+                className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]"
               />
             </div>
             <p>Start the React development server</p>
@@ -254,7 +251,7 @@ const React_course = () => {
 
               <Clipboard.WithIcon
                 valueToCopy={codeRunServer}
-                className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]" // Adjust position as needed
+                className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]"
               />
             </div>
             <p>2. Use vite to install</p>
@@ -283,7 +280,7 @@ const React_course = () => {
 
               <Clipboard.WithIcon
                 valueToCopy={codeReactVite}
-                className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]" // Adjust position as needed
+                className="absolute bottom-3 right-1 hover:bg-[#2F2F2F]"
               />
             </div>
             <p>
@@ -313,7 +310,7 @@ const React_course = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -16,6 +16,7 @@ module.exports = withMT({
         bg_primaryOld: "#0f172a",
         text_primary: "#94a3b8",
         text_primaryLight: "#e2e8f0",
+        text_dark_primary: "#000",
         bg_secondary: "#2563eb",
         custom_gradient:
           "linear-gradient(to right top, #a5d74a, #e1bb35, #ff9b51, #ff817f, #ff78af, #eb6fbd, #cf6bca, #ab6ad6, #8f56ca, #7242be, #4f31b2, #1a21a7)",

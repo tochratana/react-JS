@@ -4,7 +4,9 @@ export function Protentail() {
   return (
     <div
       className="dark:bg-bg_primary text-text_primary  flex xl:px-[10%] px-[4%] py-16 bg-gray-50 xl:flex-row flex-col items-center justify-center"
-      data-aos="zoom-in-down"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="3000"
     >
       <img
         src="./Svg/Data extraction-cuate.svg"

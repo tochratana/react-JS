@@ -12,6 +12,7 @@ import JavaScript_sidebar from "../sidebar/JavaScript_sidebar";
 import Js_course from "../../partials/Js_course";
 import Gti_course from "../../partials/Gti_course";
 import React_course from "../../partials/React_course";
+import Css_course from "../../partials/Css_course";
 
 export const CourseDetail = () => {
   const { courseId } = useParams();
@@ -27,7 +28,7 @@ export const CourseDetail = () => {
   } else if (course.id === "css-course") {
     return (
       <div>
-        <h1>This is a css course</h1>
+        <Css_course />
       </div>
     );
     // JavaScript course

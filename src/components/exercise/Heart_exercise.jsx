@@ -1,35 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Js_exercise = () => {
+const Heart_exercise = () => {
   return (
     <>
-      <div className="flex items-center gap-5 p-10 text-text_primary">
+      <div className="flex items-center gap-5 px-10 text-text_primary text-sm mt-5">
         <Link
-          to="/course/javascript-course"
+          to="/"
           className="text-blue-600 hover:underline hover:underline-offset-2"
         >
-          JavaScript
+          Home
         </Link>
         <i class="fa-solid fa-greater-than"></i>
-        <p className="">js-amazone-exercise</p>
+        <Link
+          to="/course/css-course"
+          className="text-blue-600 hover:underline hover:underline-offset-2"
+        >
+          CSS
+        </Link>
+        <i class="fa-solid fa-greater-than"></i>
+        <Link
+          to="/course/css-course/css_exercise"
+          className="text-blue-600 hover:underline hover:underline-offset-2"
+        >
+          Exercise practice
+        </Link>
+        <i class="fa-solid fa-greater-than"></i>
+        <p className="">Heart rate</p>
       </div>
       <div className="flex px-[12%] py-[2%] dark:text-text_primary gap-10 flex-col xl:flex-row">
         {/* right side */}
         <div className="sm:w-[600px] lg:w-[900px] xg:w-[1100px]">
           <div>
-            <h1 className="text-[30px] font-bold mb-5">
-              Amazone-JavaScript-Practice
-            </h1>
+            <h1 className="text-[30px] font-bold mb-5">Heart rate</h1>
             <div className="flex items-center gap-2 mb-5">
               <i className="fa-solid fa-star text-yellow-400"></i>
               <i className="fa-solid fa-star text-yellow-400"></i>
-              <i className="fa-solid fa-star text-yellow-400"></i>
+              <i className="fa-regular fa-star"></i>
               <i className="fa-regular fa-star"></i>
               <i className="fa-regular fa-star"></i>
             </div>
             <img
-              src="../image/exercise/js-amazone-exercise.png"
+              src="../../../public/image/exercise/animation.png"
               alt="js-amazone-practice"
               className="w-[90%] border-2 border-black"
             />
@@ -38,7 +50,7 @@ const Js_exercise = () => {
             <div className="flex flex-col lg:flex-row lg:gap-[60%] items-center">
               <p className="text-xl mb-5 font-bold">Descriptions</p>
               <a
-                href="https://js-amazone.vercel.app/"
+                href="#"
                 className="flex items-center gap-2 text-blue-600"
                 target="_black"
               >
@@ -75,9 +87,9 @@ const Js_exercise = () => {
           </div>
           <hr />
           <a
-            className="mt-5 flex items-center gap-5 w-[80%] h-14 m-auto rounded-lg justify-center bg-gradient-to-l from-[#8336ad] via-[#4a409a] to-[#142898]"
-            href="../../../document/project-practice/javascript-amazon-project.zip"
-            download="javascript-amazone-project.zip"
+            className="mt-5 flex items-center gap-5 w-[80%] h-14 m-auto rounded-lg justify-center bg-gradient-to-l from-[#8336ad] via-[#4a409a] to-[#142898] text-white"
+            href="../../../document/project-practice/heart.zip"
+            download="heart.zip"
           >
             <p>Download</p>
             <i class="fa-solid fa-cloud-arrow-down"></i>
@@ -108,4 +120,4 @@ const Js_exercise = () => {
   );
 };
 
-export default Js_exercise;
+export default Heart_exercise;
