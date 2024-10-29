@@ -15,7 +15,10 @@ import Connect from "./components/auth/Connect";
 import Edu_cstad from "./components/edu/Edu_cstad";
 import D_business from "./components/project/D_business";
 import D_portfolio from "./components/project/D_portfolio";
-import Js_exercise from "./components/exercise/Js_exercise";
+import Amazone_project from "./components/exercise/amazone_project";
+import JavaScript_exercise from "./components/exercise/JavaScript_exercise";
+import Heart_exercise from "./components/exercise/Heart_exercise";
+import Css_exercise from "./components/exercise/Css_exercise";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -76,8 +79,20 @@ const router = createBrowserRouter([
         element: <Edu_cstad />,
       },
       {
-        path: "/exercise/javascript",
-        element: <Js_exercise />,
+        path: "/course/javascript/exercise",
+        element: <JavaScript_exercise />,
+      },
+      {
+        path: "/course/javascript/exercise/amazone_project",
+        element: <Amazone_project />,
+      },
+      {
+        path: "/course/css-course/css_exercise",
+        element: <Css_exercise />,
+      },
+      {
+        path: "/course/css/css_exercise/heart_exercise",
+        element: <Heart_exercise />,
       },
     ],
   },
