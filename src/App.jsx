@@ -15,9 +15,10 @@ import Connect from "./components/auth/Connect";
 import Edu_cstad from "./components/edu/Edu_cstad";
 import D_business from "./components/project/D_business";
 import D_portfolio from "./components/project/D_portfolio";
-import Amazone_project from "./components/exercise/amazone_project";
+// import Amazone_project from "./components/exercise/Amazone_project";
 import JavaScript_exercise from "./components/exercise/JavaScript_exercise";
 import Heart_exercise from "./components/exercise/Heart_exercise";
+import Amazone_project from "./components/exercise/amazone_project";
 import Css_exercise from "./components/exercise/Css_exercise";
 const router = createBrowserRouter([
   {
