@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 const D_business = () => {
   return (
     <div className="text-text_primary">
-      <div>
+      <div className="flex items-center gap-5 px-10 text-text_primary text-sm mt-5 py-10">
         <Link
           to="/about/project"
-          className="flex items-center gap-2 rounded-md p-10 w-[150px]"
+          className="text-blue-600 hover:underline hover:underline-offset-2"
         >
-          <div className="w-5 h-5 border-2 border-bg_primaryOld bg-text_primary rounded-full flex justify-center items-center text-black">
-            <i className="fa-solid fa-chevron-left"></i>
-          </div>
-          <p>Back</p>
+          Home
+        </Link>
+        <i class="fa-solid fa-greater-than"></i>
+        <Link to="" className="">
+          Demo business website
         </Link>
       </div>
       <div className="w-[960px] m-auto">

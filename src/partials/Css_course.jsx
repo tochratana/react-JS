@@ -1,6 +1,6 @@
 import React from "react";
-import JavaScript_sidebar from "../components/sidebar/JavaScript_sidebar";
 import { useState, useRef } from "react";
+import { Sidebar } from "flowbite-react";
 import { Link } from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
@@ -95,12 +95,9 @@ p {
       >
         <span class="material-symbols-outlined">thumbnail_bar</span>
       </button>
-
       <div ref={sidebarRef}>
-        <JavaScript_sidebar isVisible={isSidebarVisible} />
+        <Css_sidebar isVisible={isSidebarVisible} />
       </div>
-
-      {/* <JavaScript_sidebar isVisible={isSidebarVisible} /> */}
       <a name="arrow" />
       {/* Start */}
       <div className="flex items-center gap-5 px-10 text-text_primary text-sm mt-5">
@@ -228,6 +225,39 @@ p {
           </ul>
         </div>
       </div>
+    </div>
+  );
+};
+
+const Css_sidebar = ({ isVisible }) => {
+  return (
+    <div
+      className={`${isVisible ? "block" : "hidden"} fixed inset-0 z-40 top-16`}
+    >
+      <Sidebar aria-label="Sidebar with logo branding example">
+        <Sidebar.Items>
+          <Sidebar.ItemGroup className="flex flex-col ">
+            <a
+              className="text-blue-600 hover:underline-offset-2 hover:underline"
+              href="#introduction"
+            >
+              Intoduction
+            </a>
+            <a
+              className="text-blue-600 hover:underline-offset-2 hover:underline"
+              href="#addstyletohtml"
+            >
+              Add style to html
+            </a>
+            <Link
+              className="text-blue-600 hover:underline-offset-2 hover:underline"
+              to="/course/css-course/css_exercise"
+            >
+              Exercise Practice
+            </Link>
+          </Sidebar.ItemGroup>
+        </Sidebar.Items>
+      </Sidebar>
     </div>
   );
 };

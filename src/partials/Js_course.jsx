@@ -73,7 +73,7 @@ console.log(b);
 
 //Error:Cannot access 'c' before initialization
 const c = 30;
-console.log(c); 
+console.log(c);
 `;
   const customStyle = {
     ...solarizedlight,
@@ -256,7 +256,7 @@ console.log(c);
             after install node js you can open you IDE (Visual Stideo Code) and
             open terminal run this comment
           </p>
-          <div className="relative w-[325px]">
+          <div className="background:red  relative w-[325px]">
             <SyntaxHighlighter
               language="bash"
               style={materialDark}
@@ -264,6 +264,7 @@ console.log(c);
               customStyle={{
                 padding: "1rem",
                 borderRadius: "0.375rem",
+                // backgroundColor: "#e2e8f0",
               }}
             >
               {codeRunNW}
@@ -624,21 +625,33 @@ const JavaScript_sidebar = ({ isVisible }) => {
       <Sidebar aria-label="Sidebar with logo branding example">
         <Sidebar.Items>
           <Sidebar.ItemGroup className="flex flex-col ">
-            <Link
+            <a
               className="text-blue-600 hover:underline-offset-2 hover:underline"
-              to="/exercise/javascript"
+              href="#introduction"
             >
               Introduction
-            </Link>
-            <Link
+            </a>
+            <a
               className="text-blue-600 hover:underline-offset-2 hover:underline"
-              to="/exercise/javascript"
+              href="#installation"
             >
               Installation
-            </Link>
+            </a>
+            <a
+              className="text-blue-600 hover:underline-offset-2 hover:underline"
+              href="#datatype"
+            >
+              Data type
+            </a>
+            <a
+              className="text-blue-600 hover:underline-offset-2 hover:underline"
+              href="#constletvar"
+            >
+              Const let and var
+            </a>
             <Link
               className="text-blue-600 hover:underline-offset-2 hover:underline"
-              to="/exercise/javascript"
+              to="/course/javascript/exercise"
             >
               Exercise Practice
             </Link>

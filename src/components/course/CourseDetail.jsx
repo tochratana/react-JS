@@ -16,9 +16,7 @@ export const CourseDetail = () => {
   if (course.id === "html-course") {
     return (
       // For HTMl course
-      <>
-        <h1>This is a HTML course</h1>
-      </>
+      <>{/* <h1>This is a HTML course</h1> */}</>
     );
     // CSS course
   } else if (course.id === "css-course") {
@@ -39,40 +37,32 @@ export const CourseDetail = () => {
   } else if (course.id === "typescript-course") {
     return (
       <>
-        <h1>
+        {/* <h1>
           This course I will provie you a lot of reference and documentation for
           your study.
-        </h1>
+        </h1> */}
       </>
     );
     // React coruse
   } else if (course.id === "react-course") {
-    return (
-      <>
-        <React_course />
-      </>
-    );
+    return <>{/* <React_course /> */}</>;
     // Next course
   } else if (course.id === "next-course") {
     return (
       <div className="text-text_primary">
-        <h1>This is a next js course</h1>
+        {/* <h1>This is a next js course</h1> */}
       </div>
     );
     // Github course
   } else if (course.id === "github-course") {
     return (
       <div className="text-text_primary">
-        <h1>This is a gihtub course</h1>
+        {/* <h1>This is a gihtub course</h1> */}
       </div>
     );
     // Git course
   } else if (course.id === "git-course") {
-    return (
-      <>
-        <Gti_course />
-      </>
-    );
+    return <>{/* <Gti_course /> */}</>;
   }
   //
 };

@@ -5,6 +5,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
   return (
@@ -49,7 +50,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.youtube.com/@rml-cambo"
+                  href="https://www.youtube.com/@devmentor-learning"
                   title="YouTube"
                   target="_blank"
                   className="flex items-center justify-center text-black dark:text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
@@ -59,12 +60,22 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.tiktok.com/@tochratana1"
+                  href="https://www.tiktok.com/@devmentor_learning"
                   title="Tiktok"
                   target="_blank"
                   className="flex items-center justify-center text-black dark:text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
                 >
                   <FontAwesomeIcon icon={faTiktok} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://t.me/dml_learning"
+                  title="Tiktok"
+                  target="_blank"
+                  className="flex items-center justify-center text-black dark:text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600"
+                >
+                  <FontAwesomeIcon icon={faTelegram} />
                 </a>
               </li>
             </ul>
