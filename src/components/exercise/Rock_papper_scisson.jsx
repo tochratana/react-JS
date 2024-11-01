@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import rockPaperScissor from "../../../public/image/exercise/rock-paper-scisson.png";
 
 const Rock_papper_scisson = () => {
   return (
@@ -41,7 +42,7 @@ const Rock_papper_scisson = () => {
               <i className="fa-solid fa-star text-yellow-400"></i>
             </div>
             <img
-              src="../../../public/image/exercise/rock-paper-scisson.png"
+              src={rockPaperScissor}
               alt="js-amazone-practice"
               className="w-[90%] border-2 border-black"
             />

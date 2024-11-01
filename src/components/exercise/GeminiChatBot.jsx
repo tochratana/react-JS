@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import geminiImg from "../../../public/image/exercise/geminiClone.png";
 
 const GeminiChatBot = () => {
   return (
@@ -41,7 +42,7 @@ const GeminiChatBot = () => {
               <i className="fa-regular fa-star"></i>
             </div>
             <img
-              src="../../../public/image/exercise/geminiClone.png"
+              src={geminiImg}
               alt="js-amazone-practice"
               className="w-[90%] border-2 border-black"
             />
