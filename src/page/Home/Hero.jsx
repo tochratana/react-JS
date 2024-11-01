@@ -25,7 +25,7 @@ export default function Hero() {
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="3000"
         >
-          Kick of with a bang with{" "}
+          Explore My Blog with{" "}
           <span
             className="linear-wipe"
             data-aos="fade-up"
@@ -41,8 +41,9 @@ export default function Hero() {
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="3000"
         >
-          Build your next project using React.js 14, Tailwindcss, Neon, SCSS ,
-          Resend, React Email, Shadcn/ui, Stripe.
+          This is my blog, and I created it to share study-related activities,
+          information, and my knowledge, as well as other documents I have
+          researched.
         </p>
         <div
           className="flex gap-10 md:flex-row flex-col items-center md:gap-20 lg:gap-40 mt-7"

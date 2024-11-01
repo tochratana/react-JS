@@ -42,7 +42,7 @@ const Heart_exercise = () => {
             </div>
             <img
               src="../../../public/image/exercise/animation.png"
-              alt="js-amazone-practice"
+              alt="Heart rate"
               className="w-[90%] border-2 border-black"
             />
           </div>

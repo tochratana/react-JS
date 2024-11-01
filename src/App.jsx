@@ -19,6 +19,9 @@ import JavaScript_exercise from "./components/exercise/JavaScript_exercise";
 import Heart_exercise from "./components/exercise/Heart_exercise";
 import Amazone_project from "./components/exercise/Amazone_project";
 import Css_exercise from "./components/exercise/Css_exercise";
+import Rock_papper_scisson from "./components/exercise/Rock_papper_scisson";
+import Tic_tac_toe from "./components/exercise/Tic_tac_toe";
+import GeminiChatBot from "./components/exercise/GeminiChatBot";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -93,6 +96,18 @@ const router = createBrowserRouter([
       {
         path: "/course/css/css_exercise/heart_exercise",
         element: <Heart_exercise />,
+      },
+      {
+        path: "/course/javascript/exercise/rouck_papper_scisson",
+        element: <Rock_papper_scisson />,
+      },
+      {
+        path: "/course/javascript/exercise/tic_tac_toc",
+        element: <Tic_tac_toe />,
+      },
+      {
+        path: "/course/javascript/exercise/GeminiChatBot",
+        element: <GeminiChatBot />,
       },
     ],
   },

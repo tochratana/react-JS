@@ -26,7 +26,7 @@ const JavaScript_exercise = () => {
       </p>
       <ul className="ml-[5%] text-black dark:text-text_primaryLight p-10">
         <li className="hover:text-blue-600 hover:underline hover:underline-offset-3">
-          <Link to="/">
+          <Link to="/course/javascript/exercise/rouck_papper_scisson">
             1. Rock Paper Scission (Use javascript to create a random number
             that computer pick, function and use condition)
           </Link>
@@ -36,6 +36,18 @@ const JavaScript_exercise = () => {
             2. Amazone project clone (Use javascript contain function,
             condition, loop, localstorage, json, rander data from json file
             using javascript export, module)
+          </Link>
+        </li>
+        <li className="hover:text-blue-600 hover:underline hover:underline-offset-3">
+          <Link to="/course/javascript/exercise/tic_tac_toc">
+            3. Tic Tac Toe (Use JavaScript contain function and some of style
+            with CSS)
+          </Link>
+        </li>
+        <li className="hover:text-blue-600 hover:underline hover:underline-offset-3">
+          <Link to="/course/javascript/exercise/GeminiChatBot">
+            4. Gemini clone chat bot (Using google API and google key) this
+            project I create it for learn about fect data and respon data.
           </Link>
         </li>
       </ul>
