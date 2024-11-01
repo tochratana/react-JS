@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import heartImg from "../../../public/image/exercise/animation.png";
 const Heart_exercise = () => {
   return (
     <>
@@ -41,7 +41,7 @@ const Heart_exercise = () => {
               <i className="fa-regular fa-star"></i>
             </div>
             <img
-              src="../../../public/image/exercise/animation.png"
+              src={heartImg}
               alt="Heart rate"
               className="w-[90%] border-2 border-black"
             />

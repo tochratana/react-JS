@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ticTacToe from "../../../public/image/exercise/tic-tac-toe.png";
 
 const Tic_tac_toe = () => {
   return (
@@ -41,7 +42,7 @@ const Tic_tac_toe = () => {
               <i className="fa-regular fa-star"></i>
             </div>
             <img
-              src="../../../public/image/exercise/tic-tac-toe.png"
+              src={ticTacToe}
               alt="js-amazone-practice"
               className="w-[90%] border-2 border-black"
             />

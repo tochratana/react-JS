@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import amazoneImg from "../../../public/image/exercise/js-amazone-exercise.png";
 
 const Amazone_project = () => {
   return (
@@ -43,7 +44,7 @@ const Amazone_project = () => {
               <i className="fa-regular fa-star"></i>
             </div>
             <img
-              src="../../../public/image/exercise/js-amazone-exercise.png"
+              src={amazoneImg}
               alt="js-amazone-practice"
               className="w-[90%] border-2 border-black"
             />
