@@ -152,3 +152,10 @@ html {
     }
   }
 }
+
+@media (min-width: 1400px) {
+  .profileContainer {
+    width: 1450px;
+    margin: auto;
+  }
+}
