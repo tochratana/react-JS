@@ -23,9 +23,8 @@ export const CourseCard = () => {
               Documentation
             </h2>
             <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
-              We have a lot of course or documentation for you search or learn
-              this is a little bit of my learning and I want to share it with
-              you.
+              Here is all my documentation that I have research on it and you
+              can see or copy from it to learn.
             </p>
           </div>
 

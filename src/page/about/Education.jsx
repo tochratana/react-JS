@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Education = () => {
   return (
-    <div className="px-[20%] py-10">
+    <div className="px-[15%] py-10 lg:w-[1200px] m-auto">
       <ol class="relative border-s border-gray-200 dark:border-gray-700">
         {/* Primary school */}
         <li class="mb-10 ms-4">
